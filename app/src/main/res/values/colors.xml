@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lounge_violet">#61366b</color>
+    <color name="edge_of_space">#390446</color>
+    <color name="watercourse">#5ECBDD</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

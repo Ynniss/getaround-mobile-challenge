@@ -1,0 +1,84 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_car"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="@dimen/getaround_rounding_heavy"
+    app:cardElevation="@dimen/getaround_elevation_light"
+    app:cardPreventCornerOverlap="false">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_car"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/content_description_car_image"
+                tools:srcCompat="@drawable/logo_getaround" />
+
+            <TextView
+                android:id="@+id/text_car_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/bg_text_car_name"
+                android:includeFontPadding="false"
+                android:padding="10dp"
+                android:textAppearance="?attr/textAppearanceHeadline5"
+                android:textColor="?attr/colorOnPrimary"
+                app:fontFamily="sans-serif-light"
+                tools:text="Toyota GR SUPRA" />
+
+            <TextView
+                android:id="@+id/text_car_renting_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:background="@drawable/bg_text_car_renting_price"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="?attr/colorOnPrimary"
+                app:fontFamily="sans-serif-black"
+                tools:text="17€/jour" />
+        </FrameLayout>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/ratingbar_car"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:rating="4.4" />
+
+            <TextView
+                android:id="@+id/text_car_rating_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?attr/textAppearanceBody1"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-light"
+                tools:text="20" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>
+
