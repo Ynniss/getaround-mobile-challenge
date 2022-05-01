@@ -1,7 +1,5 @@
 package com.ynniss.getaround.ui.home
 
-import android.content.ContentValues.TAG
-import android.util.Log
 import androidx.lifecycle.*
 import com.ynniss.getaround.data.remote.models.CarRentalOffer
 import com.ynniss.getaround.data.repositories.CarRepository
@@ -37,8 +35,7 @@ class HomeViewModel(
             val response = CarRepository().getCarRentalOffers()
 
             withContext(Main) {
-                _carRentalOffersResponse.value = response
-                savedStateHandle.set(LIVEDATA_TAG, _carRentalOffersResponse.value)
+                savedStateHandle.set(LIVEDATA_TAG, response)
             }
         }
     }
